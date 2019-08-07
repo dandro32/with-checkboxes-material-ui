@@ -18,9 +18,20 @@
     "preset": "ts-jest",
     "testEnvironment": "node"
   },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^24.0.17",
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-test-renderer": "^16.8.3",
     "jest": "^24.8.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts-ts": "^3.1.0",
+    "react-test-renderer": "^16.8.6",
     "rollup": "^1.19.4",
     "rollup-plugin-commonjs": "^10.0.2",
     "rollup-plugin-node-resolve": "^5.2.0",
