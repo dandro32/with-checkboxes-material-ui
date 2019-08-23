@@ -1,5 +1,5 @@
 {
-  "compilerOptions" : {
+  "compilerOptions": {
     "outDir": "build",
     "module": "esnext",
     "target": "es5",
@@ -15,9 +15,11 @@
     "noImplicitAny": true,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
   },
   "include": ["src"],
-  "exclude": ["node_modules", "build"]
+  "exclude": ["node_modules", "build", "**/__tests__/**/*"],
+  "types": ["jest", "material-ui", "react", "react-dom", "react-test-renderer"]
 }

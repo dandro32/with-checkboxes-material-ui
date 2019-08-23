@@ -1,32 +1,34 @@
-import React from 'react';
-import { Table } from '@types/material-ui'
-import { inspectTableComponent } from './utils';
-
-interface ConfigType {
-  handleCheckedRows: function,
-}
-
-type Props {
-  TableComponent: Table,
-  config: ConfigType
-}
+// import React from 'react';
+// import { inspectTableComponent } from './utils';
+// import { Tab } from 'material-ui';
 
 
-const withCheckboxes = (TableComponent: Table, config: ConfigType) => {
-  return class extends React.Component<Props> {
-    componentDidMount() {
-      const { TableComponent } = this.props;
-      try {
-        inspectTableComponent(TableComponent);
-      } catch (e) {
-        console.log(e);
-      }
-    }
+// interface ConfigType {
+//   handleCheckedRows: Function,
+// }
 
-    render() {
-      return <TableComponent />;
-    }
-  }
-}
+// interface Props {
+//   TableComponent: Tab,
+//   config: ConfigType
+// }
 
-export default withCheckboxes;
+
+// const withCheckboxes = <T extends ConfigType>(TableComponent: React.ComponentType<T>, config: ConfigType) => {
+//   console.log(config)
+//   return class extends React.Component<Tab<T, ThingsProps>> {
+//     componentDidMount() {
+//       const { TableComponent } = this.props;
+//       try {
+//         inspectTableComponent(TableComponent);
+//       } catch (e) {
+//         console.log(e);
+//       }
+//     }
+
+//     render() {
+//       return <TableComponent />;
+//     }
+//   }
+// }
+
+// export default withCheckboxes;

@@ -7,7 +7,8 @@
   "jsnext:main": "build/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "files": [
     "build"
@@ -23,13 +24,19 @@
     "react-dom": "^16.0.0"
   },
   "devDependencies": {
-    "@types/jest": "^24.0.17",
+    "@material-ui/core": "^4.3.2",
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^24.0.18",
     "@types/material-ui": "^0.21.6",
     "@types/react": "^16.8.24",
     "@types/react-dom": "^16.8.5",
     "@types/react-test-renderer": "^16.8.3",
-    "jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "jest": "^24.9.0",
     "react": "^16.8.6",
+    "react-children-utilities": "^1.2.2",
     "react-dom": "^16.8.6",
     "react-scripts-ts": "^3.1.0",
     "react-test-renderer": "^16.8.6",
@@ -41,7 +48,4 @@
     "ts-jest": "^24.0.2",
     "typescript": "^3.5.3"
   },
-  "dependencies": {
-    "@material-ui/core": "^4.3.1"
-  }
 }
